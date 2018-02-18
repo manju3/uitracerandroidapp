@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Klario</string>
+    <string name="userNameHint">User Name</string>
+    <string name="userNameError">Username can not be empty!</string>
+    <string name="passwordHint">Password</string>
+    <string name="loginString">Login</string>
+    <string name="socketURI">"https://tracersocket.klario.tech"</string>
+</resources>
