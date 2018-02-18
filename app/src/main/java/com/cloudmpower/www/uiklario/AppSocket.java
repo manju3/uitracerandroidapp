@@ -7,9 +7,9 @@ import com.github.nkzawa.socketio.client.Socket;
 
 import java.net.URISyntaxException;
 
-public class appSocket {
+public class AppSocket {
     public static Socket socket;
-    public appSocket() {
+    public AppSocket() {
         try {
             socket = IO.socket("https://tracersocket.klario.tech");
         } catch (URISyntaxException e) {

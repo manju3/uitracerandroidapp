@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -22,9 +21,18 @@ public class MainActivity extends AppCompatActivity {
     }
     public void validator() {
         //Toast.makeText(MainActivity.this, userName.getText().toString(), Toast.LENGTH_SHORT).show();
+        boolean err = false;
         if(userName.getText().toString().isEmpty()) {
             userNameError.setText(R.string.userNameError);
+            err = true;
         }
+        if(password.getText().toString().isEmpty()) {
+            passwordError.setText(R.string.passwordError);
+            err=true;
+        }
+        if(err) return;
+        AppSocket socket = new AppSocket();
+
     }
 
     public void loginClickHandler(View view) {
