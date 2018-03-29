@@ -8,4 +8,5 @@
     <string name="socketURI">"https://tracersocket.klario.tech"</string>
     <string name="title_activity_home">Home</string>
     <string name="set_level">Set Level</string>
+    <string name="set">Set</string>
 </resources>
